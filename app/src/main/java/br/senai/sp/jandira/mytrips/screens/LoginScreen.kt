@@ -133,13 +133,18 @@ fun LoginScreen(modifier: Modifier = Modifier){
              }
              Row(
                  modifier = Modifier
-                     .fillMaxWidth()
                      .align(Alignment.End)
+                     .fillMaxWidth(),
+                 horizontalArrangement = Arrangement.End
              ) {
                 Text(
                     text = stringResource(R.string.account)
                 )
-
+                Text(
+                    text = stringResource(R.string.signUp),
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF4F27A8)
+                )
              }
          }
     }
